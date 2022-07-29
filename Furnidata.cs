@@ -32,7 +32,7 @@ public class FurnidataModule : IChatCommand
 
     public string Parameters => "";
 
-    public string Description => "Shows furniture information on double click.";
+    public string Description => "Shows furniture info when you type :furnidata infront of a furniture.";
 
     public async void Execute(GameClient session, Room room, string[] @params)
     {
@@ -78,8 +78,8 @@ public class FurnidataModule : IChatCommand
             "- is_rare: " + baseItem.IsRare + "\n" +
             "- extra_rot: " + baseItem.ExtraRot + "\n" +
             "<b>item/room</b>" + "\n" +
-            "- item id " + item.Id + "\n" +
-            "- user id " + session.GetHabbo().Id + "\n" +
+            "- item id: " + item.Id + "\n" +
+            "- user id: " + session.GetHabbo().Id + "\n" +
             "- current rotation: " + item.Rotation + "\n" +
             "- x: " + item.GetX + "\n" +
             "- y: " + item.GetY + "\n" +
