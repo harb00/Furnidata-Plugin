@@ -50,7 +50,7 @@ public class FurnidataModule : IChatCommand
          }
 
          var item = itemsInfront.First();
-         var baseItem = itemsInfront.First().GetBaseItem();
+         var baseItem = item.GetBaseItem();
 
          session.SendNotification(
             "<b>public name</b>\n " + baseItem.PublicName + "\n" +
