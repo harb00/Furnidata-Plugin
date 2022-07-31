@@ -24,7 +24,7 @@ public class Furnidata : IPlugin
 }
 
 
-public class FurnidataModule : IChatCommand
+public class FurnidataCommand : IChatCommand
 {
     public string Key => "furnidata";
 
